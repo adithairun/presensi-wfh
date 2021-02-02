@@ -229,7 +229,7 @@ require_once '../akses/conn.php'
 <!-- DATA TABLE UNTUK TES -->
           <div class="card">
             <div class="card-header">
-              <h3 class="card-title">Data Siswa</h3>
+              <h3 class="card-title">Data Pengguna</h3>
 			  <form method="post" enctype="multipart/form-data" action="upload_aksi.php">
 <br>
 	Pilih File: <br>
