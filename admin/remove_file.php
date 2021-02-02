@@ -10,5 +10,6 @@
 		if(unlink("../files/".$stud_no."/".$filename)){
 			mysqli_query($conn, "DELETE FROM `storage` WHERE `store_id` = '$store_id'") or die(mysqli_error());
 		}
+		echo "<script>alert('Berhasil Simpan Presensi')</script>";		echo "<script>window.location = 'perbaiki_siswa.php'</script>";
 	}
 ?>
