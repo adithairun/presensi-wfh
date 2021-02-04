@@ -262,7 +262,7 @@ require_once '../akses/conn.php'
 					
 				</div>
 			<div class="form-group">
-				<button type="submit" class="btn btn-md btn-primary"> Update</button>
+				<button type="submit" class="btn btn-md btn-primary"> <span class="ion-upload"></span>  Update</button>
 				
 			</div>
 			 <table id="example1" class="table table-bordered table-striped">
