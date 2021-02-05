@@ -14,5 +14,7 @@
 		return false;
 	}
 	
-	$versi = "1.2";
+	$versi = "1.3";
+	
+	
 ?>
