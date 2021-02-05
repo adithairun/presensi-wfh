@@ -123,7 +123,7 @@
           </li>
 
         <li class="nav-item has-treeview ">
-            <a href="student.php" class="nav-link">
+            <a href="pengguna.php" class="nav-link">
               <i class="nav-icon fas fa-table"></i>
               <p>
                 Data Presensi
@@ -133,7 +133,7 @@
             <ul class="nav nav-treeview">
              
               <li class="nav-item">
-                <a href="student.php" class="nav-link ">
+                <a href="pengguna.php" class="nav-link ">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Data Pengguna</p>
                 </a>
@@ -145,7 +145,7 @@
                 </a>
               </li>
 			   <li class="nav-item">
-                <a href="perbaiki_siswa.php" class="nav-link">
+                <a href="data_presensi.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Presensi Pengguna</p>
                 </a>

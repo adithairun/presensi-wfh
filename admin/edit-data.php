@@ -134,7 +134,7 @@
             <ul class="nav nav-treeview">
              
               <li class="nav-item">
-                <a href="student.php" class="nav-link  ">
+                <a href="pengguna.php" class="nav-link  ">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Data Pengguna</p>
                 </a>
@@ -146,7 +146,7 @@
                 </a>
               </li>
 			   <li class="nav-item">
-                <a href="perbaiki_siswa.php" class="nav-link">
+                <a href="data_presensi.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Presensi Pengguna</p>
                 </a>
@@ -210,7 +210,7 @@
             <!-- /.card-header -->
 			
             <div class="card-body">
-			<a  href="reset_student.php"  onclick="return confirm('Seluruh Daftar Siswa Akan Dihapus')"><button class="btn btn-danger"> <span class="ion-aperture" ></span> Format Data Pengguna</button></a>
+			<a  href="reset_pengguna.php"  onclick="return confirm('Seluruh Daftar Siswa Akan Dihapus')"><button class="btn btn-danger"> <span class="ion-aperture" ></span> Format Data Pengguna</button></a>
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
@@ -248,7 +248,7 @@
 						<td><center>
 
 						<button class="btn btn-success" data-toggle="modal" data-target="#edit_modal<?php echo $fetch['stud_id']?>"><span class="ion-compose"></span> Edit</button>
-<a  href="hapus_student.php"  onclick="return confirm('Siswa Akan Dihapus, file yang diupload tidak akan dihapus')"><button class="btn btn-warning"> <span class="ion-trash-a" ></span> Hapus Data Pengguna</button></a>
+<a  href="hapus_pengguna.php"  onclick="return confirm('Siswa Akan Dihapus, file yang diupload tidak akan dihapus')"><button class="btn btn-warning"> <span class="ion-trash-a" ></span> Hapus Data Pengguna</button></a>
 						<button class="btn btn-danger btn-delete" id="<?php echo $fetch['stud_id']?>" type="button"><span class="ion-trash-b"></span> Hapus Seluruh Data</button></center>
 	
 <!--						 <button class="btn btn-success btn-lg active" role="button" data-toggle="modal" data-target="#exampleModal" aria-pressed="true">Bantuan</button> -->
@@ -322,7 +322,7 @@
 
 			<div class="modal-content">
 
-				<form method="POST" action="update_student.php">
+				<form method="POST" action="update_pengguna.php">
 
 					<div class="modal-header">
 
@@ -875,7 +875,7 @@ $(document).ready(function(){
 
 			type: "POST",
 
-			url: "delete_student.php",
+			url: "delete_pengguna.php",
 
 			data:{
 
