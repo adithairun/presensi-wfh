@@ -240,12 +240,10 @@
 								<br>
 								<a href="../download.php?store_id=<?php echo $fetch['store_id']?>" class="btn btn-sm btn-success"><span class="ion-archive"></span> Unduh</a>
 <!--
-
 								 | <button class="btn btn-danger btn_remove" type="button" id="<?php echo $fetch1['store_id']?>"><span class="glyphicon glyphicon-trash"></span> Remove</button>
 -->
  
 <!--
-
 							<button  class="btn btn-info">	 <a style="color:white" href="edit.php?stud_no=<?php echo $fetch['stud_no'];?>" <span class="ion-refresh" ></span> Update</button></a>
 -->
 <button class="btn btn-danger btn-sm btn_remove" type="button" id="<?php echo $fetch['store_id']?>"><span class="ion-trash-a"></span> Hapus</button>
@@ -485,7 +483,7 @@ $(document).ready(function(){
 			success: function(data){
 				$("#modal_remove").modal('hide');
 				alert('Berhasil Dihapus');
-				window.location = 'perbaiki_siswa.php';
+				window.location = 'data_presensi.php';
 				setTimeout(function(){
 					$(".del_file" + id).fadeOut('slow');
 				}, 1000);
@@ -1088,4 +1086,5 @@ $(document).ready(function(){
   });
 </script>
 </body>
+</html>
 </html>
