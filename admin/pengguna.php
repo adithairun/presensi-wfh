@@ -246,10 +246,13 @@ require_once '../akses/conn.php'
 
 </form>
 
+
+
             </div>
             <!-- /.card-header -->
 			
             <div class="container">
+			<a  href="download-pengguna.php"  ><button class="btn btn-success"><span class="ion-archive"></span> Download Pengguna</button></a>
 			<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
 				<div class="form-group">
 					<label>Pilih jenis update :</label>
@@ -265,6 +268,7 @@ require_once '../akses/conn.php'
 				<button type="submit" class="btn btn-md btn-primary"> <span class="ion-upload"></span>  Update</button>
 				
 			</div>
+			
 			 <table id="example1" class="table table-bordered table-striped">
 				
 				<thead>

@@ -1,5 +1,5 @@
 <?php
-	$conn = mysqli_connect("localhost", "root", "123", "absen");
+	$conn = mysqli_connect("localhost", "root", "", "wfh");
 
 	if(!$conn){
 		die("Error: Failed to connect to database!");
