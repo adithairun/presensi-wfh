@@ -59,7 +59,7 @@ margin-top :800px;
 <?php
 	session_start();
 	if(!ISSET($_SESSION['student'])){
-		header("location: index.php");
+		header("location: ..");
 	}
 	require_once 'akses/conn.php'
 ?>

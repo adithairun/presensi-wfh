@@ -17,7 +17,7 @@
 		if($row > 0){
 			$_SESSION['student'] = $fetch['stud_id'];
 			
-			header("location:home.php");
+			header("location:home");
 		}
 		else if (($row2 > 0)){
 			echo "<center><label class='text-danger'>MAAF BAPAK/IBU TIDAK TERMASUK DALAM DAFTAR WFH SIRANSIJA</label></center>";
