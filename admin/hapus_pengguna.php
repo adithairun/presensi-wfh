@@ -1,4 +1,6 @@
 <?php
+require '../akses/validator.php';
+
 // koneksi database
 include '../akses/conn.php';
  

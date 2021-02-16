@@ -250,9 +250,9 @@
 
 						<button class="btn btn-success" data-toggle="modal" data-target="#edit_modal<?php echo $fetch['stud_id']?>"><span class="ion-compose"></span> Edit</button>
 
-<a href="hapus_pengguna.php?stud_id=<?php echo $fetch['stud_id'];?>" onclick="return confirm('Data Siswa Akan Dihapus')"><button class="btn btn-warning"> <span class="" ></span> Hapus Pengguna</button></a>
+<a href="hapus_pengguna.php?stud_id=<?php echo $fetch['stud_id'];?>" onclick="return confirm('Pengguna Akan Dihapus, Lanjutkan ?')"><button class="btn btn-warning"> <span class="ion-trash-a" ></span> Hapus Pengguna</button></a>
 	
-						<button class="btn btn-danger btn-delete" id="<?php echo $fetch['stud_id']?>" type="button"><span class="ion-trash-b"></span> Hapus Seluruh Data</button></center>
+						<button class="btn btn-danger btn-delete" id="<?php echo $fetch['stud_id']?>" type="button"><i class="fas fa-trash-alt"></i> Hapus Seluruh Data</button></center>
 	
 <!--						 <button class="btn btn-success btn-lg active" role="button" data-toggle="modal" data-target="#exampleModal" aria-pressed="true">Bantuan</button> -->
 
@@ -464,7 +464,7 @@
 
 				<div class="modal-body">
 
-					<center><h4 class="text-danger">Hanya bisa menghapus siswa yang telah mengupload, File yang siswa upload akan terhapus.</h4></center>
+					<center><h4 class="text-danger">Hanya bisa menghapus pengguna yang telah mengupload, File yang pengguna upload akan terhapus.</h4></center>
 
 					<center><h3 class="text-danger">Lanjutkan ?</h3></center>
 
