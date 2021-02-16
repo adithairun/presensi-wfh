@@ -246,8 +246,8 @@ require_once '../akses/conn.php'
 
 </form>
 
-
-<button class="btn btn-success" data-toggle="modal" data-target="#form_modal"><span class="glyphicon glyphicon-plus"></span> Tambah Pengguna</button>
+<br>
+<button class="btn btn-success" data-toggle="modal" data-target="#form_modal"><span class="fas fa-plus-circle"></span> Tambah Pengguna</button>
 
             </div>
 			
@@ -568,54 +568,48 @@ require_once '../akses/conn.php'
 						<div class="col-md-3"></div>
 						<div class="col-md-6">
 							<div class="form-group">
-								<label>Student no</label>
-								<input oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type="number" maxlength="5" name="stud_no" class="form-control" required="required"/>
+								<label>Nomor</label>
+								<input oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type="number" maxlength="5" placeholder="Harus Unik" name="stud_no" class="form-control" required="required"/>
 							</div>
 							<div class="form-group">
-								<label>Firstname</label>
-								<input type="text" name="firstname" class="form-control" required="required"/>
+								<label>Nama</label>
+								<input type="text" name="nama" class="form-control" required="required"/>
+							</div>
+							
+							<div class="form-group">
+								<label>Jadwal</label>
+								<select name="jadwal" class="form-control" required="required">
+									<option value="">Pilih Jadwal</option>
+									<option value="GANJIL">GANJIL</option>
+									<option value="GENAP">GENAP</option>
+									<option value="TIDAK TERJADWAL">TIDAK TERJADWAL</option>
+								</select>
 							</div>
 							<div class="form-group">
-								<label>Lastname</label>
-								<input type="text" name="lastname" class="form-control" required="required"/>
+								<label>Username</label>
+								<input type="text" name="username" class="form-control" required="required"/>
 							</div>
-							<div class="form-group">
-								<label>Gender</label>
-								<select name="gender" class="form-control" required="required">
-									<option value=""></option>
-									<option value="Male">Male</option>
-									<option value="Female">Female</option>
-								</select>
-							</div>
-							<div class="form-inline">
-								<label>Year</label>
-								<select name="year" class="form-control" required="required">
-									<option value=""></option>
-									<option value="1">1</option>
-									<option value="2">2</option>
-									<option value="3">3</option>
-									<option value="4">4</option>
-								</select>
-								<label>Section</label>
-								<select name="section" class="form-control" required="required">
-									<option value=""></option>
-									<option value="A">A</option>
-									<option value="B">B</option>
-									<option value="C">C</option>
-									<option value="D">D</option>
-								</select>
-							</div>
-							<br />
 							<div class="form-group">
 								<label>Password</label>
-								<input type="password" name="password" class="form-control" required="required"/>
+								<input type="text" name="password" class="form-control" required="required"/>
 							</div>
+							
+							<div class="form-group">
+								<label>Status</label>
+								<select name="status" class="form-control" required="required">
+									<option value="">Pilih Status Aktif</option>
+									<option value="YA">YA</option>
+									<option value="TIDAK">TIDAK</option>
+									<option value="TIDAK TERMASUK">TIDAK TERMASUK</option>
+								</select>
+							</div>
+							
 						</div>
 					</div>
 					<div style="clear:both;"></div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-danger" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Close</button>
-						<button name="save" class="btn btn-success" ><span class="glyphicon glyphicon-save"></span> Save</button>
+						<button type="button" class="btn btn-danger" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Tutup</button>
+						<button name="save" class="btn btn-primary" ><span class="fas fa-plus-circle"></span> Simpan</button>
 					</div>
 				</form>
 			</div>
