@@ -247,12 +247,15 @@ require_once '../akses/conn.php'
 </form>
 
 
+<button class="btn btn-success" data-toggle="modal" data-target="#form_modal"><span class="glyphicon glyphicon-plus"></span> Tambah Pengguna</button>
 
             </div>
+			
             <!-- /.card-header -->
 			
             <div class="container">
 			<a  href="download-pengguna.php"  ><button class="btn btn-success"><span class="ion-archive"></span> Download Pengguna</button></a>
+			
 			<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
 				<div class="form-group">
 					<label>Pilih jenis update :</label>
@@ -536,186 +539,9 @@ require_once '../akses/conn.php'
 	<!-- AKHIR UPDATE STATUS -->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	<div class="modal fade" id="form_modal" aria-hidden="true">
-
-		<div class="modal-dialog modal-dialog-centered">
-
-			<div class="modal-content">
-
-				<form method="POST" action="save_pengguna.php">
-
-					<div class="modal-header">
-
-						<h4 class="modal-title">Add Student</h4>
-
-					</div>
-
-					<div class="modal-body">
-
-						<div class="col-md-3"></div>
-
-						<div class="col-md-6">
-
-							<div class="form-group">
-
-								<label>Student no</label>
-
-								<input oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type="number" maxlength="5" name="stud_no" class="form-control" required="required"/>
-
-							</div>
-
-							<div class="form-group">
-
-								<label>Firstname</label>
-
-								<input type="text" name="firstname" class="form-control" required="required"/>
-
-							</div>
-
-							<div class="form-group">
-
-								<label>Lastname</label>
-
-								<input type="text" name="lastname" class="form-control" required="required"/>
-
-							</div>
-
-							<div class="form-group">
-
-								<label>Gender</label>
-
-								<select name="gender" class="form-control" required="required">
-
-									<option value=""></option>
-
-									<option value="Male">Male</option>
-
-									<option value="Female">Female</option>
-
-								</select>
-
-							</div>
-
-							<div class="form-inline">
-
-								<label>Year</label>
-
-								<select name="year" class="form-control" required="required">
-
-									<option value=""></option>
-
-									<option value="1">1</option>
-
-									<option value="2">2</option>
-
-									<option value="3">3</option>
-
-									<option value="4">4</option>
-
-								</select>
-
-								<label>Section</label>
-
-								<select name="section" class="form-control" required="required">
-
-									<option value=""></option>
-
-									<option value="A">A</option>
-
-									<option value="B">B</option>
-
-									<option value="C">C</option>
-
-									<option value="D">D</option>
-
-								</select>
-
-							</div>
-
-							<br />
-
-							<div class="form-group">
-
-								<label>Password</label>
-
-								<input type="password" name="password" class="form-control" required="required"/>
-
-							</div>
-
-						</div>
-
-					</div>
-
-					<div style="clear:both;"></div>
-
-					<div class="modal-footer">
-
-						<button type="button" class="btn btn-danger" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Close</button>
-
-						<button name="save" class="btn btn-success" ><span class="glyphicon glyphicon-save"></span> Save</button>
-
-					</div>
-
-				</form>
-
-			</div>
-
-		</div>
-
-	</div>
          
                 </tbody>
-                <tfoot>
-                <tr>
-                 <th>No</th>
-
-					<th>Aksi</th>
-
-					<th>Nama Siswa</th>
-
-					<th>Jenis Kelamin</th>
-
-					<th>NISN</th>
-
-					<th>Tempat Lahir</th>
-
-					<th>Tanggal Lahir</th>
-
-					<th>Agama</th>
-
-					<th>Nama Ayah</th>
-
-					<th>Nama Ibu</th>
-
-					<th>Kelas</th>
-                 
-                </tr>
-                </tfoot>
+               
               </table>
             </div>
             <!-- /.card-body -->
@@ -731,7 +557,69 @@ require_once '../akses/conn.php'
   
   
   
-  
+  <div class="modal fade" id="form_modal" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<form method="POST" action="save_pengguna.php">	
+					<div class="modal-header">
+						<h4 class="modal-title">Tambah Pengguna</h4>
+					</div>
+					<div class="modal-body">
+						<div class="col-md-3"></div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label>Student no</label>
+								<input oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type="number" maxlength="5" name="stud_no" class="form-control" required="required"/>
+							</div>
+							<div class="form-group">
+								<label>Firstname</label>
+								<input type="text" name="firstname" class="form-control" required="required"/>
+							</div>
+							<div class="form-group">
+								<label>Lastname</label>
+								<input type="text" name="lastname" class="form-control" required="required"/>
+							</div>
+							<div class="form-group">
+								<label>Gender</label>
+								<select name="gender" class="form-control" required="required">
+									<option value=""></option>
+									<option value="Male">Male</option>
+									<option value="Female">Female</option>
+								</select>
+							</div>
+							<div class="form-inline">
+								<label>Year</label>
+								<select name="year" class="form-control" required="required">
+									<option value=""></option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+								</select>
+								<label>Section</label>
+								<select name="section" class="form-control" required="required">
+									<option value=""></option>
+									<option value="A">A</option>
+									<option value="B">B</option>
+									<option value="C">C</option>
+									<option value="D">D</option>
+								</select>
+							</div>
+							<br />
+							<div class="form-group">
+								<label>Password</label>
+								<input type="password" name="password" class="form-control" required="required"/>
+							</div>
+						</div>
+					</div>
+					<div style="clear:both;"></div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Close</button>
+						<button name="save" class="btn btn-success" ><span class="glyphicon glyphicon-save"></span> Save</button>
+					</div>
+				</form>
+			</div>
+		</div>
   
   
   <!-- MODAL DLL -->
