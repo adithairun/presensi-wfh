@@ -210,7 +210,7 @@
             <!-- /.card-header -->
 			
             <div class="card-body">
-			<a  href="reset_pengguna.php"  onclick="return confirm('Seluruh Daftar Siswa Akan Dihapus')"><button class="btn btn-danger"> <span class="ion-aperture" ></span> Format Data Pengguna</button></a>
+			<a  href="reset_pengguna.php"  onclick="return confirm('Seluruh Pengguna Akan Dihapus, File yang diupload tetap ada. Lanjutkan ?')"><button class="btn btn-danger"> <span class="ion-aperture" ></span> Format Data Pengguna</button></a>
 			
 			  <table id="example1" class="table table-bordered table-striped">
                 <thead>
