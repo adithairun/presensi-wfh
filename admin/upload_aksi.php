@@ -51,5 +51,5 @@ for ($i=2; $i<=$jumlah_baris; $i++){
 unlink($_FILES['filesiswa2']['name']);
 
 // alihkan halaman ke index.php
-header("location:student.php?berhasil=$berhasil");
+header("location:pengguna.php?berhasil=$berhasil");
 ?>
