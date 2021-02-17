@@ -275,24 +275,28 @@ require_once '../akses/conn.php'
 			 <table id="example1" class="table table-bordered table-striped">
 				
 				<thead>
-					<th>NO</th>
+					<th><input type="checkbox" onchange="checkAll(this)" ></th>
 					<th>NAMA</th>
 					<th>USERNAME</th>
 					<th>JADWAL</th>
 					
 					<th>AKTIF</th>
-					<th><input type="checkbox" onchange="checkAll(this)" ></th>
+					
 				</thead>
 				<tbody>
 					<?php
 
-						$no = 1;
 						
+						$no = 1;
 						$data =showData();
 						while($row=$data->fetch_array()){
 							echo '
 								<tr>
-									<td>'.$no.'</td>
+								<td>
+
+										<input type="checkbox" name="stud_no[]" value="'.$row['stud_no'].'">
+									</td>
+									
 									<td>'.$row['nama'].'</td>
 									<td>'.$row['username'].'</td>
 									
@@ -300,10 +304,7 @@ require_once '../akses/conn.php'
 									<td>'.$row['jadwal'].'</td>
 									<td>'.$row['status'].'</td>
 									
-									<td>
-
-										<input type="checkbox" name="stud_no[]" value="'.$row['stud_no'].'">
-									</td>
+									
 								</tr>
 
 
