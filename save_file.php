@@ -12,7 +12,7 @@
 		$nama = $_POST['nama'];
 		$absen = $_POST['absen'];
 		$ext	= pathinfo($file_name, PATHINFO_EXTENSION); 
-		$new_name  = (date('Y-m-d-his')) . '-' .$nama . '-' .$absen . '.' . $ext;
+		$new_name  = (date('Y-m-d-h-i-s')) . '-' .$nama . '-' .$absen . '.' . $ext;
 		$location = "files/".$stud_no."/".$new_name ;
 		
 		
