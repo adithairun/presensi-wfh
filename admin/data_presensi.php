@@ -204,7 +204,23 @@
 
             </div>
             <!-- /.card-header -->
-			
+			<div class="card mt-5">
+			<center>
+			<b><u>
+   <h4>Pilih Tanggal Presensi Yang Akan DiTampilkan</h4>
+   </b></u>
+  </center>
+   <div class="card-body mx-auto">
+    <form method="POST" action="" class="form-inline mt-3">
+     <label for="date1">Tanggal mulai &nbsp;</label>
+     <input type="date" name="date1" id="date1" class="form-control mr-2">
+     <label for="date2">&nbsp; Sampai &nbsp; </label>
+     <input type="date" name="date2" id="date2" class="form-control mr-2">
+     <button type="submit" name="submit" class="btn btn-primary">Cari</button>
+    </form>
+
+	</div>
+	</div>
             <div class="card-body">
 			<a  href="export_excel.php"  ><button class="btn btn-success"><span class="ion-archive"></span> Download Excel</button></a>
               <table id="example1" class="table table-bordered table-striped">
@@ -217,20 +233,47 @@
 					<th>Nomor</th>
 					<th>Presensi</th>
 					<?php
+					/*
 				$no=1;
 					$query = mysqli_query($conn, "SELECT * FROM storage ORDER BY nama, date_uploaded, jam ASC") or die(mysqli_error());
 					//$query = mysqli_query($conn, "SELECT * FROM student  ") or die(mysqli_error());
 				//	$query = mysqli_query($conn, "SELECT * FROM student LEFT JOIN storage ON student.stud_no = storage.perbaiki UNION SELECT * FROM student RIGHT JOIN storage ON student.stud_no = storage.perbaiki  ") or die(mysqli_error($conn));
 					while($fetch = mysqli_fetch_array($query)){
-				?>
+				*/?>
 					
-				
+					<?php 
+
+// koneksi
+$no=1;
+
+if (isset($_POST['submit'])) {
+ $date1 = $_POST['date1'];
+ $date2 = $_POST['date2'];
+
+ if (!empty($date1) && !empty($date2)) {
+  // perintah tampil data berdasarkan range tanggal
+  $query = mysqli_query($conn, "SELECT * FROM storage WHERE date_uploaded BETWEEN '$date1' and '$date2'"); 
+ } else {
+  // perintah tampil semua data
+  $query = mysqli_query($conn, "SELECT * FROM storage where absen = 1 "); 
+ }
+} else {
+ // perintah tampil semua data
+ $query = mysqli_query($conn, "SELECT * FROM storage where absen = 1 ");
+}
+
+?>
 
                 </tr>
                 </thead>
                 <tbody>
               
-				
+				<?php
+     
+     $no = 1;
+
+     while ($fetch = $query->fetch_assoc()) {
+     ?>
 					<tr class="del_student<?php echo $fetch['stud_id']?>">
 						<th><?php echo $no++; ?></th>
 						<td><center>
@@ -289,7 +332,11 @@
 
 
 
+<?php
 
+					}
+
+				?>
 
 
 
@@ -435,11 +482,7 @@
 
 	</div>
 
-				<?php
-
-					}
-
-				?>
+				
 
 			</tbody>
 
