@@ -208,6 +208,7 @@
             <div class="card-body">
 			<a  href="export_excel.php"  ><button class="btn btn-success"><span class="ion-archive"></span> Download Excel</button></a>
               <table id="example1" class="table table-bordered table-striped">
+			  
                 <thead>
                 <tr>
                   	<th>No</th>
@@ -215,20 +216,21 @@
 					<th>Nama</th>
 					<th>Nomor</th>
 					<th>Presensi</th>
-					
+					<?php
+				$no=1;
+					$query = mysqli_query($conn, "SELECT * FROM storage ORDER BY nama, date_uploaded, jam ASC") or die(mysqli_error());
+					//$query = mysqli_query($conn, "SELECT * FROM student  ") or die(mysqli_error());
+				//	$query = mysqli_query($conn, "SELECT * FROM student LEFT JOIN storage ON student.stud_no = storage.perbaiki UNION SELECT * FROM student RIGHT JOIN storage ON student.stud_no = storage.perbaiki  ") or die(mysqli_error($conn));
+					while($fetch = mysqli_fetch_array($query)){
+				?>
 					
 				
 
                 </tr>
                 </thead>
                 <tbody>
-               	<?php
-				$no=1;
-					$query = mysqli_query($conn, "SELECT * FROM storage ORDER BY nama, date_uploaded, jam DESC") or die(mysqli_error());
-					//$query = mysqli_query($conn, "SELECT * FROM student  ") or die(mysqli_error());
-				//	$query = mysqli_query($conn, "SELECT * FROM student LEFT JOIN storage ON student.stud_no = storage.perbaiki UNION SELECT * FROM student RIGHT JOIN storage ON student.stud_no = storage.perbaiki  ") or die(mysqli_error($conn));
-					while($fetch = mysqli_fetch_array($query)){
-				?>
+              
+				
 					<tr class="del_student<?php echo $fetch['stud_id']?>">
 						<th><?php echo $no++; ?></th>
 						<td><center>
