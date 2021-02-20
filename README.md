@@ -15,4 +15,6 @@ Dibuat untuk WFH aplikasi siransija
 - 1.5
 - Perbaikan htaccess pengguna
 - perbaiki hapus pengguna beserta file
+- Menu pengguna tidak pakai nomor urut
+- Format save file di pengguna jadi tanggal dan jam
 	
