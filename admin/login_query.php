@@ -13,7 +13,7 @@
 		if($row > 0){
 			$_SESSION['user'] = $fetch['user_id'];
 			$_SESSION['status'] = $fetch['status'];
-			header("location:home.php");
+			header("location:home");
 		}else{
 			echo "<center><label class='text-danger'>Invalid username or password</label></center>";
 		}
