@@ -2,6 +2,13 @@
 	require 'login_query.php';
 	require_once '../akses/conn.php'
 ?>
+<?php
+	
+	if(!ISSET($_SESSION['user'])){
+		header("location: index");
+	}
+	require_once '../akses/conn.php'
+?>
 <!DOCTYPE html>
 <html>
 <head>
