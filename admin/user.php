@@ -366,7 +366,7 @@
 
 									<option value="administrator">Admin</option>
 
-									<option value="Regular">Verifikator</option>
+									<option value="Regular">Reguler</option>
 
 								</select>
 
