@@ -128,7 +128,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="user.php" class="nav-link">
+                <a href="user" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Manajemen Akun</p>
                 </a>
@@ -139,7 +139,7 @@
 
           
           <li class="nav-item has-treeview ">
-            <a href="pengguna.php" class="nav-link">
+            <a href="#" class="nav-link">
               <i class="nav-icon fas fa-table"></i>
               <p>
                 Data Presensi
@@ -149,19 +149,19 @@
             <ul class="nav nav-treeview">
              
               <li class="nav-item">
-                <a href="pengguna.php" class="nav-link ">
+                <a href="pengguna" class="nav-link ">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Data Pengguna</p>
                 </a>
               </li>
 			   <li class="nav-item">
-                <a href="edit-data.php" class="nav-link  ">
+                <a href="edit-data" class="nav-link  ">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Edit Data</p>
                 </a>
               </li>
 			   <li class="nav-item">
-                <a href="data_presensi.php" class="nav-link">
+                <a href="data-presensi" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Presensi Pengguna</p>
                 </a>
@@ -173,7 +173,7 @@
           
      
           <li class="navbar">
-      <a href="logout.php" class="fas fa-arrow-alt-circle-left">
+      <a href="logout" class="fas fa-arrow-alt-circle-left">
 
         Keluar
       </a>
