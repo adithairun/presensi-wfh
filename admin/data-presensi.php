@@ -156,7 +156,7 @@
           
          
           <li class="navbar">
-      <a href="logout.php" class="fas fa-arrow-alt-circle-left">
+      <a href="logout" class="fas fa-arrow-alt-circle-left">
 
         Keluar
       </a>
