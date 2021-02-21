@@ -91,7 +91,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item has-treeview">
-            <a href="home.php" class="nav-link">
+            <a href="home" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Dashboard
@@ -111,7 +111,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="user.php" class="nav-link">
+                <a href="user" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Manajemen Akun</p>
                 </a>
@@ -132,19 +132,19 @@
             <ul class="nav nav-treeview">
              
               <li class="nav-item">
-                <a href="pengguna.php" class="nav-link ">
+                <a href="pengguna" class="nav-link ">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Data Pengguna</p>
                 </a>
               </li>
 			  <li class="nav-item">
-                <a href="edit-data.php" class="nav-link  ">
+                <a href="edit-data" class="nav-link  ">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Edit Data</p>
                 </a>
               </li>
 			   <li class="nav-item">
-                <a href="#" class="nav-link active">
+                <a href="data-presensi" class="nav-link active">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Presensi Pengguna</p>
                 </a>
