@@ -120,7 +120,7 @@ require_once '../akses/conn.php'
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item has-treeview">
-            <a href="home.php" class="nav-link">
+            <a href="home" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Dashboard
@@ -140,7 +140,7 @@ require_once '../akses/conn.php'
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="user.php" class="nav-link">
+                <a href="user" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Manajemen Akun</p>
                 </a>
@@ -167,13 +167,13 @@ require_once '../akses/conn.php'
                 </a>
               </li>
 			   <li class="nav-item">
-                <a href="edit-data.php" class="nav-link  ">
+                <a href="edit-data" class="nav-link  ">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Edit Data</p>
                 </a>
               </li>
 			   <li class="nav-item">
-                <a href="data_presensi.php" class="nav-link">
+                <a href="data-presensi" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Presensi Pengguna</p>
                 </a>
@@ -185,7 +185,7 @@ require_once '../akses/conn.php'
           
          
           <li class="navbar">
-      <a href="logout.php" class="fas fa-arrow-alt-circle-left">
+      <a href="logout" class="fas fa-arrow-alt-circle-left">
 
         Keluar
       </a>
