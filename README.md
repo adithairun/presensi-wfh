@@ -18,4 +18,5 @@ Dibuat untuk WFH aplikasi siransija
 - Menu pengguna tidak pakai nomor urut
 - Format save file di pengguna jadi tanggal dan jam
 - tambah menu cari berdasarkan tanggal di data presensi php
+- Folde download template dipindah
 	
